@@ -1,0 +1,1 @@
+const expresiones={nombre:/^[a-zA-ZÀ-ÿ\s]{1,60}$/,apellidos:/^[a-zA-ZÀ-ÿ\s]{1,60}$/,telefono:/^[0-9]{10}$/,email:/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,password:/^.{6,15}$/,precio:/^[0-9]$/};
