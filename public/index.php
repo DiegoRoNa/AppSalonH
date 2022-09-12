@@ -16,40 +16,40 @@ $router = new Router();
 
 //RUTAS
 //Iniciar sesion
-$router->get('/', [LoginController::class, 'login']);
-$router->post('/', [LoginController::class, 'login']);
-$router->get('/logout', [LoginController::class, 'logout']);
+$router->get('/appsalonH/', [LoginController::class, 'login']);
+$router->post('/appsalonH/', [LoginController::class, 'login']);
+$router->get('/appsalonH/logout', [LoginController::class, 'logout']);
 
 //Recuperar contraseña
-$router->get('/olvide', [LoginController::class, 'olvide']);
-$router->post('/olvide', [LoginController::class, 'olvide']);
-$router->get('/recuperar', [LoginController::class, 'recuperar']);
-$router->post('/recuperar', [LoginController::class, 'recuperar']);
+$router->get('/appsalonH/olvide', [LoginController::class, 'olvide']);
+$router->post('/appsalonH/olvide', [LoginController::class, 'olvide']);
+$router->get('/appsalonH/recuperar', [LoginController::class, 'recuperar']);
+$router->post('/appsalonH/recuperar', [LoginController::class, 'recuperar']);
 
 //Crear cuenta
-$router->get('/crear-cuenta', [LoginController::class, 'crear']);
-$router->post('/crear-cuenta', [LoginController::class, 'crear']);
+$router->get('/appsalonH/crear-cuenta', [LoginController::class, 'crear']);
+$router->post('/appsalonH/crear-cuenta', [LoginController::class, 'crear']);
 
 //Confirmar cuenta
-$router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);
-$router->get('/mensaje', [LoginController::class, 'mensaje']);
+$router->get('/appsalonH/confirmar-cuenta', [LoginController::class, 'confirmar']);
+$router->get('/appsalonH/mensaje', [LoginController::class, 'mensaje']);
 
 //AREA PRIVADA (autenticacion)
-$router->get('/cita', [CitaController::class, 'index']);
-$router->get('/admin', [AdminController::class, 'index']);
+$router->get('/appsalonH/cita', [CitaController::class, 'index']);
+$router->get('/appsalonH/admin', [AdminController::class, 'index']);
 
 //API de citas
-$router->get('/api/servicios', [APIController::class, 'index']);
-$router->post('/api/citas', [APIController::class, 'guardar']);
-$router->post('/api/eliminar', [APIController::class, 'eliminar']);
+$router->get('/appsalonH/api/servicios', [APIController::class, 'index']);
+$router->post('/appsalonH/api/citas', [APIController::class, 'guardar']);
+$router->post('/appsalonH/api/eliminar', [APIController::class, 'eliminar']);
 
 //Crud de servicios
-$router->get('/servicios', [ServicioController::class, 'index']);
-$router->get('/servicios/crear', [ServicioController::class, 'crear']);
-$router->post('/servicios/crear', [ServicioController::class, 'crear']);
-$router->get('/servicios/actualizar', [ServicioController::class, 'actualizar']);
-$router->post('/servicios/actualizar', [ServicioController::class, 'actualizar']);
-$router->post('/servicios/eliminar', [ServicioController::class, 'eliminar']);
+$router->get('/appsalonH/servicios', [ServicioController::class, 'index']);
+$router->get('/appsalonH/servicios/crear', [ServicioController::class, 'crear']);
+$router->post('/appsalonH/servicios/crear', [ServicioController::class, 'crear']);
+$router->get('/appsalonH/servicios/actualizar', [ServicioController::class, 'actualizar']);
+$router->post('/appsalonH/servicios/actualizar', [ServicioController::class, 'actualizar']);
+$router->post('/appsalonH/servicios/eliminar', [ServicioController::class, 'eliminar']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();
