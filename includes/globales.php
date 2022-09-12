@@ -1,3 +1,3 @@
 <?php 
 
-define('HOSTING', 'http://appsalon.com.devel');
+define('HOSTING', 'https://diegorona.com/appsalonH');
