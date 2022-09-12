@@ -55,7 +55,7 @@
             if (esUltimo($actual, $proximo)) { ?>
                 <p class="total">Total: <span>$<?=$total;?></span></p>
 
-                <form action="/api/eliminar" method="POST">
+                <form action="/appsalonH/api/eliminar" method="POST">
                     <input type="hidden" id="id" name="id" value="<?=$cita->id;?>">
                     <input type="submit" value="Eliminar cita" class="boton-eliminar">
                 </form>
@@ -67,6 +67,6 @@
 
 <!--CARGAR JS-->
 <?php $script = "
-        <script src='build/js/buscador.js'></script>
+        <script src='public/build/js/buscador.js'></script>
     "; 
 ?>

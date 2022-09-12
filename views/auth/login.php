@@ -19,6 +19,6 @@
 </form>
 
 <div class="acciones">
-    <a href="/crear-cuenta">¿Aún no tienes una cuenta?, crea una</a>
-    <a href="/olvide">¿Olvidaste tu contraseña?</a>
+    <a href="/appsalonH/crear-cuenta">¿Aún no tienes una cuenta?, crea una</a>
+    <a href="/appsalonH/olvide">¿Olvidaste tu contraseña?</a>
 </div>

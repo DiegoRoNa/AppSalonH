@@ -17,6 +17,6 @@
 </form>
 
 <div class="acciones">
-    <a href="/">¿Ya tienes cuenta?, inicia sesión</a>
-    <a href="/crear-cuenta">¿Aún no tienes una cuenta?, crea una</a>
+    <a href="/appsalonH/">¿Ya tienes cuenta?, inicia sesión</a>
+    <a href="/appsalonH/crear-cuenta">¿Aún no tienes una cuenta?, crea una</a>
 </div>

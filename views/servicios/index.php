@@ -11,9 +11,9 @@
             <p>Precio: <span>$<?=$servicio->precio;?></span></p>
 
             <div class="acciones">
-                <a class="boton" href="/servicios/actualizar?id=<?=$servicio->id;?>">Actualizar</a>
+                <a class="boton" href="/appsalonH/servicios/actualizar?id=<?=$servicio->id;?>">Actualizar</a>
 
-                <form action="/servicios/eliminar" method="post">
+                <form action="/appsalonH/servicios/eliminar" method="post">
                     <input type="hidden" name="id" id="id" value="<?=$servicio->id;?>">
 
                     <input type="submit" class="boton-eliminar" value="Eliminar">

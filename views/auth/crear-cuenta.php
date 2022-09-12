@@ -4,7 +4,7 @@
 <!--ERRORES Y ALERTAS-->
 <?php include_once __DIR__.'/../templates/alertas.php'; ?>
 
-<form action="/crear-cuenta" method="POST" class="formulario" novalidate>
+<form action="/appsalonH/crear-cuenta" method="POST" class="formulario" novalidate>
     <div class="campo">
         <label for="nombre">Nombre</label>
         <input type="text" name="nombre" id="nombre" value="<?=isset($usuario->nombre) ? s($usuario->nombre) : '';?>" placeholder="Tu nombre">
@@ -34,6 +34,6 @@
 </form>
 
 <div class="acciones">
-    <a href="/">¿Ya tienes una uenta?, inicia sesión</a>
-    <a href="/olvide">¿Olvidaste tu contraseña?</a>
+    <a href="/appsalonH/">¿Ya tienes una uenta?, inicia sesión</a>
+    <a href="/appsalonH/olvide">¿Olvidaste tu contraseña?</a>
 </div>
