@@ -1,9 +1,14 @@
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
- 
-    RewriteEngine On
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ public/ [QSA,L]
 
-    RewriteRule ^ public/ [QSA,L]
-</IfModule>
+# <IfModule mod_rewrite.c>
+#     <IfModule mod_negotiation.c>
+#         Options -MultiViews -Indexes
+#     </IfModule>
+ 
+#     RewriteEngine On
+
+#     RewriteRule ^ public/ [QSA,L]
+# </IfModule>
