@@ -38,9 +38,9 @@ class LoginController{
                         //VERIFICAR SI ES ADMIN O CLIENTE Y REDIRIGIR RESPECTIVAMENTE
                         if ($usuario->admin === '1') {
                             $_SESSION['admin'] = $usuario->admin ?? null;
-                            header('Location: /admin');
+                            header('Location: /appsalonH/admin');
                         }else {
-                            header('Location: /cita');
+                            header('Location: /appsalonH/cita');
                         }
                     }
                 }else {
@@ -65,7 +65,7 @@ class LoginController{
         //VACIAMOS LA SESSION
         $_SESSION = [];
 
-        header('Location: /');
+        header('Location: /appsalonH/');
     }
 
     //  /olvide
@@ -152,7 +152,7 @@ class LoginController{
                 $resultado = $usuario->guardar();
 
                 if ($resultado) {
-                    header('Location: /');
+                    header('Location: /appsalonH/');
                 }
             }
 
@@ -199,7 +199,7 @@ class LoginController{
                     //CREAR EL USUARIO
                     $resultado = $usuario->guardar();
                     if ($resultado) {
-                        header('Location: /mensaje');
+                        header('Location: /appsalonH/mensaje');
                     }
 
                 }

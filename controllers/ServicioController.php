@@ -54,7 +54,7 @@ class ServicioController{
                 $servicio->guardar();
 
                 //REDIRECCIONAMOS
-                header('Location: /servicios');
+                header('Location: /appsalonH/servicios');
             }
         }
 
@@ -99,7 +99,7 @@ class ServicioController{
                 $servicio->guardar();
 
                 //REDIRECCIONAMOS
-                header('Location: /servicios');
+                header('Location: /appsalonH/servicios');
             }
         }
 
@@ -129,7 +129,7 @@ class ServicioController{
             $servicio->eliminar();
 
             //redireccionamos
-            header('Location: /servicios');
+            header('Location: /appsalonH/servicios');
         }
     }
 

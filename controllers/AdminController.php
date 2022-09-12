@@ -20,7 +20,7 @@ class AdminController{
 
         //checkdate: devuelve true o false si existe una fecha o no
         if ( !checkdate( $fechas[1], $fechas[2], $fechas[0] ) ) {
-            header('Location: /404');
+            header('Location: /appsalonH/404');
         }
 
         //HACER LA CONSULTA A LA BD
