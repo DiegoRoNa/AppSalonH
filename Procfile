@@ -1,1 +1,1 @@
-web: vendor/bin/hostgator-php-apache2 public/
+web: public/index.php
