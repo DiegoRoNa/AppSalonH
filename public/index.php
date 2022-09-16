@@ -15,7 +15,7 @@ use MVC\Router;
 $router = new Router();
 
 //RUTAS
-//Iniciar sesion
+//Iniciar sesionaa
 $router->get('/appsalonH/', [LoginController::class, 'login']);
 $router->post('/appsalonH/', [LoginController::class, 'login']);
 $router->get('/appsalonH/logout', [LoginController::class, 'logout']);
