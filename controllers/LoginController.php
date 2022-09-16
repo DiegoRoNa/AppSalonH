@@ -16,6 +16,7 @@ class LoginController{
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $auth = new Usuario($_POST); //objeto de usuario con el correo y contraseña
 
+            echo 'login';
             //VALIDAR EL FORMULARIO
             $alertas = $auth->validarLogin();
 
@@ -38,8 +39,10 @@ class LoginController{
                         //VERIFICAR SI ES ADMIN O CLIENTE Y REDIRIGIR RESPECTIVAMENTE
                         if ($usuario->admin === '1') {
                             $_SESSION['admin'] = $usuario->admin ?? null;
+                            echo 'admin';
                             header('Location: /appsalonH/admin');
                         }else {
+                            echo 'cita';
                             header('Location: /appsalonH/cita');
                         }
                     }

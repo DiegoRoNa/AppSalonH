@@ -29,7 +29,7 @@ class Router
         //session_start();
         //$currentUrl = $_SERVER["PATH_INFO"] ?? '/';
         //$currentUrl = getPathInfo() ?? '/';//ruta actual de la URL
-        $currentUrl = $_SERVER["REQUEST_URI"] === '' ? '/appsalonH/' : $_SERVER["REQUEST_URI"];
+        $currentUrl = $_SERVER["REQUEST_URI"] === '' ? '/' : $_SERVER["REQUEST_URI"];
         $method = $_SERVER['REQUEST_METHOD'];//metodo
 
         //SI EL METODO ES GET
