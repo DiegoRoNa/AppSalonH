@@ -63,7 +63,8 @@ class ServicioController{
             'titulo' => 'Crear Servicios',
             'nombre' => $nombre,
             'servicio' => $servicio,
-            'alertas' => $alertas
+            'alertas' => $alertas,
+            'href' => 'servicios/public/build/css/app.css'
         ]);
         
     }

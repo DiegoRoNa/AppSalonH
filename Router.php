@@ -26,7 +26,7 @@ class Router
     {
 
         // Iniciar sesion y Proteger Rutas...
-        session_start();
+        //session_start();
         //$currentUrl = $_SERVER["PATH_INFO"] ?? '/';
         //$currentUrl = getPathInfo() ?? '/';//ruta actual de la URL
         $currentUrl = $_SERVER["REQUEST_URI"] === '' ? '/' : $_SERVER["REQUEST_URI"];

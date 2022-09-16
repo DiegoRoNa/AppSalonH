@@ -3,7 +3,7 @@
 
 
 require __DIR__ . '/../vendor/autoload.php';//Autoload de composer
-echo __DIR__;
+
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__); // cargar el archivo .env
 $dotenv->safeLoad(); // en caso de que el archivo no exista, no va a marcar un error
 
